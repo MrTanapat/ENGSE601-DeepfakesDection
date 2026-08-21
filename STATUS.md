@@ -37,6 +37,6 @@ Status ที่แนะนำ: `Not Started`, `In Progress`, `Ready for Review
 
 ## Revision history
 
-| Date     | Week/artifact | From → To    | Reason / feedback | Owner        | New tag/commit    |
-| -------- | ------------- | ------------ | ----------------- | ------------ | ----------------- |
-| 21/08/26 | Week0         | Week0→ Week1 | [กรอก]            | ธนภัทร นุกูล | Update: Status.md |
+| Date     | Week/artifact   | From → To | Reason / feedback | Owner        | New tag/commit      |
+| -------- | --------------- | --------- | ----------------- | ------------ | ------------------- |
+| 21/08/26 | Week0 SetupRepo | V0 -> V1  | [กรอก]            | ธนภัทร นุกูล | `Update: Status.md` |
