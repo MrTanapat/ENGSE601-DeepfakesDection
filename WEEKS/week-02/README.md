@@ -31,13 +31,13 @@
 
 ## Definition of Done
 
-- [ ] ระบุสถานะจริงและ critical slice
-- [ ] เห็น flow Requirements/SRS → Design → Implement → Test → Decision แม้บางช่วงยังไม่พร้อม
-- [ ] ทุกช่วงมี V&V question และ evidence ที่ตรวจได้หรือวางแผนชัด
-- [ ] evidence status ซื่อสัตย์
-- [ ] มี Gate/decision point, owner/when และ feedback loop อย่างน้อย 1 จุด
-- [ ] ผ่าน peer review และมี AI Use Declaration เมื่อใช้ AI
-- [ ] ชื่อไฟล์ path tag และ `STATUS.md` ตรงกัน
+- [x] ระบุสถานะจริงและ critical slice
+- [x] เห็น flow Requirements/SRS → Design → Implement → Test → Decision แม้บางช่วงยังไม่พร้อม
+- [x] ทุกช่วงมี V&V question และ evidence ที่ตรวจได้หรือวางแผนชัด
+- [x] evidence status ซื่อสัตย์
+- [x] มี Gate/decision point, owner/when และ feedback loop อย่างน้อย 1 จุด
+- [x] ผ่าน peer review และมี AI Use Declaration เมื่อใช้ AI
+- [x] ชื่อไฟล์ path tag และ `STATUS.md` ตรงกัน
 
 ## Handoff ไป Week 03
 
