@@ -1,2 +1,6 @@
 Requirement_ID,Requirement_Source_Version,Linked_Risk_or_Stakeholder,Acceptance_Basis,Planned_Test_Level,Planned_Evidence,Evidence_Status,Owner,Open_Issue_or_Next_Action
-[กรอก],[กรอก],[กรอก],[AC-...],[Component/Integration/System/UAT/Review],[กรอก],[Existing/Planned/Not Ready/Not Executed],[กรอก],[กรอก]
+NFR-02,SE02 Final §10.4 (IN-01),QR-01 (W01) / Lanner News,AC-01;AC-02;AC-03 (W03 REQ-01),Component,ผล MT-01/MT-02/MT-03 (รวม cross-dataset),Existing (FF-C23) / Not Executed (cross-dataset),ธนภัทร,ยืนยัน scope cross-dataset ก่อน Week 04-05
+FR-05,SE02 Final §10.3 UC-04 (IN-01),QR-01 (W01),AC-01;AC-02;AC-03 (W03 REQ-02),Component,unit test RetinaFace detection,Not Executed,ธนภัทร,รันก่อน Week 05
+FR-06,SE02 Final §10.3 UC-04 (IN-01),QR-01 (W01),AC-01;AC-02 (W03 REQ-03 draft),Component,unit test model inference,Not Ready,ธนภัทร,ยืนยันข้อความเต็มจาก SE02 ต้นฉบับก่อน Week 04
+FR-07,SE02 Final §10.3 UC-04 (IN-01),QR-01 (W01) / Lanner News,AC-01;AC-02;AC-03 (W03 REQ-04 draft),System/UAT,UAT-02 end-to-end result,Not Ready,ธนภัทร,ยืนยัน aggregation method/threshold จริงก่อน Week 04
+NFR-09,SE02 Final §10.4 (IN-01),QR-01 (โดยอ้อม),AC-01;AC-02 (W03 REQ-05),System,load/error-rate test log,Not Executed,ธนภัทร,รันก่อน Week 08

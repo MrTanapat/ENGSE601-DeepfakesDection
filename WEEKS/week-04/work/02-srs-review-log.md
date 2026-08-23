@@ -1,14 +1,21 @@
 # W04-02 — SRS Review Log
 
-| Finding ID | Req ID / version / location | Lens | Pass/Finding + evidence/counterexample | Impact / priority | Disposition | Revision / decision | Owner / due | Re-check status/evidence |
-|---|---|---|---|---|---|---|---|---|
-| RV-01 | [กรอก] | Correct / Complete / Consistent / Clear / Feasible / Testable / Traceable | [กรอก] | Critical/Major/Minor + reason | Accepted/Revised/Deferred/Rejected | [กรอก] | [กรอก] | [กรอก] |
-| RV-02 | [กรอก] | [กรอก] | [กรอก] | [กรอก] | [กรอก] | [กรอก] | [กรอก] | [กรอก] |
+| Finding ID | Req ID / version / location | Lens                  | Pass/Finding + evidence/counterexample                                        | Impact / priority                                        | Disposition | Revision / decision                                                  | Owner / due           | Re-check status/evidence                                                 |
+| ---------- | --------------------------- | --------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------- | ----------- | -------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------ |
+| RV-01      | NFR-02 / SE02 §10.4         | Clear + Testable      | Finding: "ระดับที่เหมาะสม" ไม่มี metric ตัดสินผ่าน-ไม่ผ่านไม่ได้              | Major — กระทบ Gate A ของ core quality requirement        | Revised     | ปรับ wording เป็น Accuracy≥90%/AUC≥0.95 ใน W03-OUT REQ-01            | ธนภัทร / ก่อน Week 04 | self-check ผ่าน — เกณฑ์ตัวเลขยังไม่อนุมัติภายนอก (ดู Requirement status) |
+| RV-02      | FR-06 / SE02 §10.3, UC-04   | Complete + Clear      | Finding: ข้อความต้นฉบับตัดไม่ครบ ("...") ทำให้ preprocessing เต็มไม่ชัด       | Critical — บล็อก Gate A บางส่วน (core model pipeline)    | Deferred    | เปิด open question รอยืนยันข้อความเต็มจาก SE02Finalversion.docx จริง | ธนภัทร / ก่อน Week 04 | ยังไม่ re-check — สถานะ Not Ready                                        |
+| RV-03      | FR-07 / SE02 §10.3, UC-04   | Testable + Complete   | Finding: ไม่ระบุ aggregation method/threshold ตัดสิน Real/Fake                | Critical — เป็นผลลัพธ์สุดท้ายที่ Lanner News ใช้ตัดสินใจ | Deferred    | เปิด open question รอยืนยันจากโค้ด implementation จริง               | ธนภัทร / ก่อน Week 04 | ยังไม่ re-check — สถานะ Not Ready                                        |
+| RV-04      | FR-05 / SE02 §10.3, UC-04   | Complete              | Finding: ไม่ระบุ detector/กรณีหลายใบหน้า — แก้แล้วระบุ RetinaFace + edge case | Minor — แก้ได้ทันทีจากบทที่3                             | Accepted    | ปรับ wording ใน W03-OUT REQ-02                                       | ธนภัทร                | self-check ผ่าน — สถานะ Ready                                            |
+| RV-05      | NFR-09 / SE02 §10.4         | Consistent + Testable | Finding: อาจซ้อนทับกับ NFR-05 + ไม่มี metric — ปรับเป็น ≥95% success rate     | Major — เกณฑ์ยังไม่อนุมัติภายนอก                         | Revised     | ปรับ wording ใน W03-OUT REQ-05                                       | ธนภัทร / ก่อน Week 04 | self-check ผ่าน — เกณฑ์ตัวเลขยังไม่อนุมัติภายนอก                         |
 
 ## Requirement status after review
 
-| Requirement ID | Status | Acceptance basis | Remaining open issue | Owner/due | Reason/evidence |
-|---|---|---|---|---|---|
-| [กรอก] | Ready / Conditional / Not Ready | [AC IDs/path] | [กรอก/ไม่มี] | [กรอก] | [อ้าง Review Log] |
+| Requirement ID | Status      | Acceptance basis                        | Remaining open issue                                           | Owner/due                  | Reason/evidence |
+| -------------- | ----------- | --------------------------------------- | -------------------------------------------------------------- | -------------------------- | --------------- |
+| NFR-02         | Conditional | AC-01, AC-02, AC-03 (W03 REQ-01)        | เกณฑ์ Accuracy≥90%/AUC≥0.95 ยังไม่อนุมัติจากอาจารย์/ผู้ว่าจ้าง | ธนภัทร / ก่อน Gate A final | อ้าง RV-01      |
+| FR-05          | Ready       | AC-01, AC-02, AC-03 (W03 REQ-02)        | ไม่มี                                                          | ธนภัทร                     | อ้าง RV-04      |
+| FR-06          | Not Ready   | AC-01, AC-02 (W03 REQ-03, draft)        | ข้อความต้นฉบับไม่ครบ ยังยืนยันไม่ได้                           | ธนภัทร / ก่อน Week 04      | อ้าง RV-02      |
+| FR-07          | Not Ready   | AC-01, AC-02, AC-03 (W03 REQ-04, draft) | aggregation method/threshold จริงยังไม่ยืนยัน                  | ธนภัทร / ก่อน Week 04      | อ้าง RV-03      |
+| NFR-09         | Conditional | AC-01, AC-02 (W03 REQ-05)               | เกณฑ์ ≥95% ยังไม่อนุมัติภายนอก                                 | ธนภัทร / ก่อน Gate A final | อ้าง RV-05      |
 
-ข้อเสนอแก้ไข (`Proposed revision`) ไม่ใช่ stakeholder decision จนกว่าผู้มีอำนาจยืนยัน หากยังไม่ยืนยันให้ใช้ `Conditional/Not Ready`
+ข้อเสนอแก้ไข (`Proposed revision`) ไม่ใช่ stakeholder decision จนกว่าผู้มีอำนาจยืนยัน — เกณฑ์ตัวเลขทั้งหมดในตารางนี้ยังเป็นข้อเสนอของทีมเอง จึงติด `Conditional`/`Not Ready` ตามจริง ไม่ปรับเป็น `Ready` ก่อนได้รับการยืนยัน
