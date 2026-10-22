@@ -1,0 +1,47 @@
+# วันที่รัน: 2026-10-22 11:15:24 +0700
+# ระบบที่ทดสอบ: ENGSE212 Frontend (Next.js 16.2.1, next dev ที่ http://localhost:3000) · commit 441d891 · ไม่มี Backend (backend/main.py ว่าง)
+# Node.js v22.22.0 · @playwright/test 1.56.1 · Chromium 141.0.7390.37 headless · เครื่อง: Linux x86_64
+# หมายเหตุสภาพแวดล้อม: เครื่องทดสอบออกอินเทอร์เน็ตไม่ได้ ฟอนต์จาก Google Fonts โหลดไม่สำเร็จ หน้าจอจึงใช้ฟอนต์สำรอง (ไม่กระทบตรรกะที่ทดสอบ)
+# ไฟล์ทดสอบ: tests/e2e/make-test-data.sh → clip_100MB_plus_1B.mp4=104857601 bytes clip_5MB.mp4=5242880 bytes 
+# โฟลเดอร์ที่รัน: /home/claude/mrtanapat/deepfakes-detections-xceptionnet/frontend
+# คำสั่ง: SHOT_DIR=/home/claude/sub/03-test-execution/evidence CHROMIUM_PATH=/opt/pw-browsers/chromium-1194/chrome-linux/chrome npx playwright test tests/e2e/upload.spec.ts --reporter=list
+
+
+Running 2 tests using 1 worker
+
+  ✓  1 tests/e2e/upload.spec.ts:10:5 › SYS-01 Guest เปิดหน้าตรวจและเลือกวิดีโอ MP4 5 MB ได้ โดยไม่ต้องเข้าสู่ระบบ (1.2s)
+  ✘  2 tests/e2e/upload.spec.ts:20:5 › SYS-02 Guest เลือกวิดีโอ 100 MB + 1 ไบต์ ระบบไม่รับ และแจ้งว่าเกิน 100 MB (6.4s)
+
+
+  1) tests/e2e/upload.spec.ts:20:5 › SYS-02 Guest เลือกวิดีโอ 100 MB + 1 ไบต์ ระบบไม่รับ และแจ้งว่าเกิน 100 MB 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByText('START DETECTION')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 5000ms
+      - waiting for getByText('START DETECTION')
+        9 × locator resolved to 1 element
+          - unexpected value "1"
+
+
+      23 |   await page.waitForTimeout(500);
+      24 |   await page.screenshot({ path: `${shots}/SYS-02_system_${day}_1-after-select.png`, fullPage: true });
+    > 25 |   await expect(page.getByText("START DETECTION")).toHaveCount(0);
+         |                                                   ^
+      26 |   await expect(page.locator(".text-red-400")).toContainText("100");
+      27 | });
+      28 |
+        at /home/claude/mrtanapat/deepfakes-detections-xceptionnet/frontend/tests/e2e/upload.spec.ts:25:51
+
+    Error Context: test-results/upload-SYS-02-Guest-เลือกว-91ee4-ม่รับ-และแจ้งว่าเกิน-100-MB/error-context.md
+
+  1 failed
+    tests/e2e/upload.spec.ts:20:5 › SYS-02 Guest เลือกวิดีโอ 100 MB + 1 ไบต์ ระบบไม่รับ และแจ้งว่าเกิน 100 MB 
+  1 passed (8.5s)
+
+# exit code: 1

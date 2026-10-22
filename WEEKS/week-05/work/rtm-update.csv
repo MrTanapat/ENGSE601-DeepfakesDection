@@ -1,0 +1,8 @@
+﻿req_id,acceptance_criteria,planned_test_level,planned_evidence,design_component,observation_point,evidence_status,blocked_by
+SRS FR-002 · SE02 FR-03,"S2-B REQ-01, REQ-02 (Given/When/Then)",Unit · System,ผลเทอร์มินัล Vitest · ภาพหน้าจอ /detect,FE-2 Upload Module,ปลายทางผู้ใช้,Planned,—
+ตารางที่ 3.23 ข้อ 5,S2-B REQ-03,Integration (API),ผลเทอร์มินัล API test · รายการวัตถุใน R2 ก่อน/หลัง,BE-2 File Handler Module,ระหว่างส่วนประกอบ,Not Ready,DQ-02 · ยังไม่มีโค้ด Backend
+SE02 NFR-02,W03 REQ-01 AC-01–03,Component (Model),ผล MT-01/MT-02 บน Testing Set,BE-4 XceptionNet Inference,ภายในส่วนประกอบ,Not Ready,DQ-04
+SE02 FR-07 · SRS FR-007–009,W03 REQ-04 (ร่าง),System · UAT,ภาพหน้าจอผล Real/Fake · บันทึก UAT-02/03,BE-3 · FE-3,ปลายทางผู้ใช้,Not Ready,DQ-05
+SE02 FR-10/11,"FT-05, FT-08 · ST-01, ST-02",Integration (API),ผล API 401/403,BE-1 Auth Module,ระหว่างส่วนประกอบ,Not Ready,DQ-06 · ยังไม่มีโค้ด Backend
+SE02 BR-07 · NFR-03,ไฟล์ Guest ถูกลบภายใน 24 ชม. · Member 30 วัน,Integration,config lifecycle ของ R2 · รายการวัตถุตามเวลา,R2 (ตารางที่ 3.22),ภายในส่วนประกอบ,Planned,—
+SRS NFR-002,ภาพ ≤ 30 วินาที · วิดีโอ ≤ 5 นาที,System,log เวลา upload → result,ยังระบุไม่ได้,ยังระบุไม่ได้,Not Ready,DQ-07

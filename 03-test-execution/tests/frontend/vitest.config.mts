@@ -1,0 +1,13 @@
+// vitest.config.mts — ใช้รัน Unit test ของ Upload Module (ENGSE601 ใบงาน 3–4)
+import { defineConfig } from "vitest/config";
+import react from "@vitejs/plugin-react";
+import path from "node:path";
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: { alias: { "@": path.resolve(__dirname, "src") } },
+  test: {
+    environment: "jsdom",
+    include: ["tests/unit/**/*.test.tsx"],
+  },
+});

@@ -1,0 +1,133 @@
+# วันที่รัน: 2026-10-22 11:15:11 +0700
+# ระบบที่ทดสอบ: ENGSE212 Frontend (Next.js 16.2.1) · repo MrTanapat/Deepfakes-Detections-Xceptionnet commit 441d891
+# Node.js v22.22.0 · Vitest 3.2.4 · jsdom 26.1.0 · @testing-library/react 16.3.0 · เครื่อง: Linux x86_64
+# โฟลเดอร์ที่รัน: /home/claude/mrtanapat/deepfakes-detections-xceptionnet/frontend
+# คำสั่ง: npx vitest run tests/unit/upload-validation.test.tsx
+
+
+ RUN  v3.2.4 /home/claude/mrtanapat/deepfakes-detections-xceptionnet/frontend
+
+ ❯ tests/unit/upload-validation.test.tsx (11 tests | 3 failed) 184ms
+   ✓ REQ-01 ขนาดไฟล์ไม่เกิน 100 MB (แบ่งกลุ่ม + ค่าขอบ) > TC-01 วิดีโอ MP4 ขนาด 104857599 ไบต์ ควรรับ (ขอบใน 100 MB − 1 ไบต์) 66ms
+   ✓ REQ-01 ขนาดไฟล์ไม่เกิน 100 MB (แบ่งกลุ่ม + ค่าขอบ) > TC-02 วิดีโอ MP4 ขนาด 104857600 ไบต์ ควรรับ (ขอบ 100 MB พอดี) 12ms
+   ✓ REQ-01 ขนาดไฟล์ไม่เกิน 100 MB (แบ่งกลุ่ม + ค่าขอบ) > TC-04 วิดีโอ MP4 ขนาด 20971520 ไบต์ ควรรับ (ตัวแทนกลุ่มที่ถูกต้อง 20 MB) 12ms
+   × REQ-01 ขนาดไฟล์ไม่เกิน 100 MB (แบ่งกลุ่ม + ค่าขอบ) > TC-03 วิดีโอ MP4 ขนาด 100 MB + 1 ไบต์ ควรไม่รับ แจ้งว่าเกิน 100 MB (เลยขอบ) 31ms
+     → expected <span …(1)>…(1)</span> to be null
+   ✓ REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-05 photo.jpg (image/jpeg) ขนาด 5 MB ควรรับ 12ms
+   ✓ REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-06 photo.png (image/png) ขนาด 5 MB ควรรับ 9ms
+   ✓ REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-07 clip.mp4 (video/mp4) ขนาด 5 MB ควรรับ 8ms
+   ✓ REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-08 clip.mov (video/quicktime) ขนาด 5 MB ควรรับ 8ms
+   × REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-09 clip.avi (video/x-msvideo) ขนาด 5 MB ควรรับ 9ms
+     → expected 'Unsupported file type.' to be '' // Object.is equality
+   × REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-10 photo.webp (image/webp) ขนาด 5 MB ควรไม่รับ และแจ้งว่าไม่รองรับ 9ms
+     → expected <span …(1)>…(1)</span> to be null
+   ✓ REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-11 report.pdf (application/pdf) ขนาด 5 MB ควรไม่รับ และแจ้งว่าไม่รองรับ 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/unit/upload-validation.test.tsx > REQ-01 ขนาดไฟล์ไม่เกิน 100 MB (แบ่งกลุ่ม + ค่าขอบ) > TC-03 วิดีโอ MP4 ขนาด 100 MB + 1 ไบต์ ควรไม่รับ แจ้งว่าเกิน 100 MB (เลยขอบ)
+AssertionError: expected <span …(1)>…(1)</span> to be null
+
+- Expected: 
+null
+
++ Received: 
+<span
+  class="relative flex items-center justify-center gap-2"
+>
+  <svg
+    class="h-4 w-4"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="11"
+      cy="11"
+      r="7"
+    />
+    <path
+      d="M21 21l-3-3"
+      stroke-linecap="round"
+    />
+  </svg>
+  START DETECTION
+</span>
+
+ ❯ tests/unit/upload-validation.test.tsx:53:25
+     51|   test("TC-03 วิดีโอ MP4 ขนาด 100 MB + 1 ไบต์ ควรไม่รับ แจ้งว่าเกิน 10…
+     52|     const { startButton, errorText } = selectFile(makeFile("clip.mp4",…
+     53|     expect(startButton).toBeNull();
+       |                         ^
+     54|     expect(errorText).toContain("100");
+     55|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tests/unit/upload-validation.test.tsx > REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-09 clip.avi (video/x-msvideo) ขนาด 5 MB ควรรับ
+AssertionError: expected 'Unsupported file type.' to be '' // Object.is equality
+
+- Expected
++ Received
+
++ Unsupported file type.
+
+ ❯ tests/unit/upload-validation.test.tsx:67:23
+     65|   ])("%s %s (%s) ขนาด 5 MB ควรรับ", (_id, name, type) => {
+     66|     const { startButton, errorText } = selectFile(makeFile(name, type,…
+     67|     expect(errorText).toBe("");
+       |                       ^
+     68|     expect(startButton).not.toBeNull();
+     69|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  tests/unit/upload-validation.test.tsx > REQ-02 ประเภทไฟล์ที่รองรับ JPG PNG MP4 MOV AVI (แบ่งกลุ่ม) > TC-10 photo.webp (image/webp) ขนาด 5 MB ควรไม่รับ และแจ้งว่าไม่รองรับ
+AssertionError: expected <span …(1)>…(1)</span> to be null
+
+- Expected: 
+null
+
++ Received: 
+<span
+  class="relative flex items-center justify-center gap-2"
+>
+  <svg
+    class="h-4 w-4"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="11"
+      cy="11"
+      r="7"
+    />
+    <path
+      d="M21 21l-3-3"
+      stroke-linecap="round"
+    />
+  </svg>
+  START DETECTION
+</span>
+
+ ❯ tests/unit/upload-validation.test.tsx:76:25
+     74|   ])("%s %s (%s) ขนาด 5 MB ควรไม่รับ และแจ้งว่าไม่รองรับ", (_id, name,…
+     75|     const { startButton, errorText } = selectFile(makeFile(name, type,…
+     76|     expect(startButton).toBeNull();
+       |                         ^
+     77|     expect(errorText).not.toBe("");
+     78|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 8 passed (11)
+   Start at  11:15:11
+   Duration  1.31s (transform 249ms, setup 0ms, collect 459ms, tests 184ms, environment 366ms, prepare 106ms)
+
+
+# exit code: 1

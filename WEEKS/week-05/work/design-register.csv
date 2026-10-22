@@ -1,0 +1,5 @@
+﻿doc_name,version,status,owner,file_path,used_to_check
+IN-01 Proposal SE02 (SE02-Deepfakes-detection-Document-Edit_thanit_signed.pdf),Final · 2 มี.ค. 2569,Current · มีก่อนพัฒนา,ธนภัทร,,BR-01–07 · FR-01–11 (ตารางที่ 2 และ 7) · NFR-01–09 · §11.1–11.2 ขอบเขตและบทบาท
+IN-02 SRS (Software_Requirements_Specification.pdf),ไม่ระบุรุ่นในเอกสาร,Current · มีก่อนพัฒนา,ธนภัทร,,FR-001–010 · NFR-001–005 · ข้อจำกัดและสมมติฐาน
+IN-03 บทที่3 การออกแบบ (บทที่3_20-08-26.pdf),20 ส.ค. 2569,Current · สร้างย้อนหลัง (เขียนหลังเริ่มโค้ด Frontend 22 มี.ค. 2569),ธนภัทร,,เอกสารออกแบบที่ถูกทบทวน: §3.2.5 สถาปัตยกรรม · §3.4 โมเดล · ตารางที่ 3.20–3.24 · §3.7 พฤติกรรม · §3.8 ไฟล์ · §3.10 ความปลอดภัย · §3.11 แผนทดสอบ
+โค้ด ENGSE212 (MrTanapat/Deepfakes-Detections-Xceptionnet),commit 441d891 · 26 พ.ค. 2569,อ้างอิงเฉพาะหัวข้อ 8 · —,ธนภัทร,,ไม่ใช้ตัดสินสถานะการรองรับ ใช้เฉพาะบันทึกการถ่ายโอน
