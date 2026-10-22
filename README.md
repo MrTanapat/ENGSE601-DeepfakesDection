@@ -1,97 +1,73 @@
-# ENGSE601 — Team V&V Evidence Repository
+# ENGSE601 · Team V&V Evidence Repository · DeepfakesDection
 
-> Template สำหรับแต่ละกลุ่ม ใช้เก็บข้อมูลตั้งต้น งานระหว่างทำ และหลักฐานส่งของ ENGSE601 ที่เชื่อมกับโครงงาน ENGSE212
+> repo หลักฐานการทวนสอบและการตรวจสอบ (V&V) ของรายวิชา ENGSE601 ที่เชื่อมกับโครงงาน ENGSE212
+> **หน้าส่งงานหลัก: [SUBMISSIONS.md](SUBMISSIONS.md)** · ส่งผ่าน Release `engse601-submit` ภายในศุกร์ 23 ต.ค. 2569 เวลา 23:59
 
-## 1. เริ่มต้นตรงนี้
+| รายการ | ข้อมูล |
+|---|---|
+| ชื่อทีม (`TeamName`) | DeepfakesDection |
+| สมาชิก | ธนภัทร นุกูล · GitHub `MrTanapat` (ทีม 1 คน) · ดู [TEAM.md](TEAM.md) |
+| โครงงาน ENGSE212 | เว็บแอปพลิเคชันตรวจจับ Deepfake อัจฉริยะเพื่อความมั่นคงปลอดภัยสารสนเทศ (กรณีศึกษา สำนักข่าว Lanner News) |
+| repo โครงงาน | [MrTanapat/Deepfakes-Detections-Xceptionnet](https://github.com/MrTanapat/Deepfakes-Detections-Xceptionnet) · commit ที่ใช้ทดสอบ `441d891` |
+| feature ที่ใช้ในใบงาน 1–4 | อัปโหลดไฟล์และตรวจไฟล์ก่อนประมวลผล (UC-02 · UC-03) |
+| รายละเอียดโครงงาน | [PROJECT.md](PROJECT.md) · ทะเบียนเอกสารต้นทาง [INPUTS/input-register.md](INPUTS/input-register.md) |
 
-ก่อนเริ่ม Week 01 ให้ทีมทำตามลำดับนี้
+## งานทั้งหมดใน repo นี้
 
-1. สร้าง repository ของทีมจาก template นี้ และตั้งชื่อแนะนำเป็น `engse601-<year>-<team-name>`
-2. กำหนด repository เป็น **Private** หากมีข้อมูลโครงงาน บุคคล หรือหน่วยงานที่ไม่ควรเปิดเผย
-3. เพิ่มสมาชิกทุกคนและอาจารย์ตามสิทธิ์ที่กำหนด
-4. กรอก [PROJECT.md](PROJECT.md) และ [TEAM.md](TEAM.md)
-5. นำ Proposal, Requirement/SRS และเอกสารออกแบบที่มีอยู่มา **วางหรือเชื่อมโยง** ตาม [INPUTS/README.md](INPUTS/README.md)
-6. กรอก [INPUTS/input-register.md](INPUTS/input-register.md) ให้เห็นชื่อเอกสาร version, owner และ source of truth
-7. อ่าน [CONTRIBUTING.md](CONTRIBUTING.md) เพื่อใช้ branch, commit, review และ tag ให้เป็นวิธีเดียวกันทั้งทีม
-8. ตรวจรายการพร้อมเริ่มใน [STATUS.md](STATUS.md) แล้วจึงเปิด `WEEKS/week-01/README.md`
+| # | งาน | ไฟล์ | สรุป |
+|---|---|---|---|
+| G1 | W01 Quality Risk Cards | [W01_DeepfakesDection_Quality-Risk-Cards_v1.pdf](WEEKS/week-01/submission/W01_DeepfakesDection_Quality-Risk-Cards_v1.pdf) | 5 cards · QR-01 ส่งต่อเป็น critical slice |
+| G2 | W02 Project Quality Route Map | [W02_DeepfakesDection_Project-Quality-Route-Map_v1.pdf](WEEKS/week-02/submission/W02_DeepfakesDection_Project-Quality-Route-Map_v1.pdf) | Route Map ของ QR-01 (NFR-02) |
+| G3 | W03 Revised Critical Requirements | [W03_DeepfakesDection_Revised-Critical-Requirements_v1.pdf](WEEKS/week-03/submission/W03_DeepfakesDection_Revised-Critical-Requirements_v1.pdf) | ปรับ 5 requirements พร้อม Acceptance Criteria |
+| G4 | W04 SRS Review, RTM Lite และ Gate A | [W04_DeepfakesDection_SRS-Review-and-RTM_v1.pdf](WEEKS/week-04/submission/W04_DeepfakesDection_SRS-Review-and-RTM_v1.pdf) · [work/](WEEKS/week-04/work/) | Gate A = Conditional |
+| G5 | W05 Requirement-to-Design Trace | [W05_DeepfakesDection_Requirement-to-Design-Trace_v1.pdf](WEEKS/week-05/submission/W05_DeepfakesDection_Requirement-to-Design-Trace_v1.pdf) · [work/](WEEKS/week-05/work/) | trace กับบทที่3 ของโครงงาน · 7 TR · 5 DR · 7 DQ |
+| G6 | ใบงานครั้งที่ 1 ส่วน B | [S1-B_DeepfakesDection.pdf](01-plan/S1-B_DeepfakesDection.pdf) · [อ่านบนเว็บ](01-plan/S1-B_DeepfakesDection.md) | กฎ ภาพส่วนประกอบ (สร้างย้อนหลัง) ข้อค้นพบ Entry/Exit |
+| G7 | ใบงานครั้งที่ 2 ส่วน B | [S2-B_DeepfakesDection.pdf](02-test-design/S2-B_DeepfakesDection.pdf) · [อ่านบนเว็บ](02-test-design/S2-B_DeepfakesDection.md) | ชุดอ้างอิงรุ่น v1 · 14 กรณี |
+| G8 | ใบงานรวม 3–4 ส่วน B1 | [execution-report.md](03-test-execution/execution-report.md) · [tests/](03-test-execution/tests/) · [evidence/](03-test-execution/evidence/) | Pass 9 · Fail 4 · Not Executed 1 · UAT Not Executed พร้อมแผน |
+| G9 | ใบงานรวม 3–4 ส่วน B3 | [TEAM.md](TEAM.md) · [AI-LOG.md](AI-LOG.md) | หน้าที่และการใช้ AI |
 
-## 2. หลักการใช้ repository
+ไม่มีใบงานรวม 3–4 ส่วน B2 และสัปดาห์ที่ 6–17 เพราะไม่ได้สอนในภาคนี้
+
+## งานเชื่อมกันอย่างไร
 
 ```text
-READ        เอกสารสอน/Worksheet จาก Course Repo หรือ LMS
-   ↓
-INPUT       Proposal + Requirement/SRS + artifact จริงจาก ENGSE212
-   ↓
-WORK        กรอก template และบันทึกการทบทวนใน WEEKS/week-XX/work/
-   ↓
-CHECK       Peer review + Definition of Done + ตรวจการใช้ AI
-   ↓
-SUBMIT      Export PDF ไปที่ WEEKS/week-XX/submission/
-   ↓
-TRACE       Commit + tag + บันทึก URL/commit hash ใน STATUS.md
-   ↓
-HANDOFF     ใช้ output เป็น input ของสัปดาห์ถัดไปและงาน ENGSE212
+W01      Quality Risk Cards ──► QR-01 ผลตรวจผิดกับคลิปนอกชุดเทรน
+W02–W04  Route Map → ปรับ requirement → Review + RTM ──► Gate A แบบมีเงื่อนไข
+W05      Trace requirement กับบทที่3 ──► รู้ว่ากฎตรวจไฟล์อยู่ที่ FE-2 และ BE-2
+ครั้งที่ 1  เลือก feature อัปโหลดและตรวจไฟล์ ──► ข้อค้นพบรายการประเภทไฟล์ไม่ตรงกัน · Entry/Exit
+ครั้งที่ 2  ออกแบบกรณีทดสอบ 14 ข้อ ──► ชุดอ้างอิงรุ่น v1 (ยังไม่มีผลรัน)
+ครั้งที่ 3  รันชุดอ้างอิงกับ Frontend 441d891 ──► ผลจริง 9 ผ่าน 4 ไม่ผ่าน + หลักฐาน
 ```
 
-เอกสารใน `INPUTS/` คือข้อมูลต้นทาง ไม่ควรแก้ทับโดยไม่เปลี่ยน version ส่วนไฟล์ใน `work/` แก้ได้ระหว่างทำ และไฟล์ใน `submission/` คือสำเนาที่ทีมประกาศว่าใช้ส่งในรอบนั้น
+ข้อที่ไม่ผ่านบันทึกตามจริง เช่น TC-03 ไฟล์ 100 MB + 1 ไบต์ยังถูกรับ เพราะ Frontend ตั้งขีดจำกัดไว้ 500 MB · ทีมไม่ได้แก้ผลที่คาดหวังให้ตรงกับผลจริง
 
-## 3. สถานะหลักฐานที่ต้องใช้ตรงกัน
+## กติกาที่ใช้ใน repo นี้
 
-| Status | ใช้เมื่อ | สิ่งที่ต้องอ้างอิง |
-|---|---|---|
-| `Existing` | หลักฐานมีอยู่จริงและเปิดตรวจได้ | path/URL, version/build, วันที่หรือ commit |
-| `Planned` | วางแผนจะสร้าง แต่ยังไม่เกิด | owner, next action, ช่วงเวลาที่คาดไว้ |
-| `Not Ready` | ยังทำไม่ได้เพราะมี decision/input/blocker ขาด | blocker, decision owner, next action |
-| `Not Executed` | ออกแบบการทดสอบแล้วแต่ยังไม่ได้รัน | test/case ที่วางแผนไว้; **ห้ามใส่ผลสมมติ** |
+- repo เป็น **Public** · ไม่มีรหัสนักศึกษา ไม่มีงานเดี่ยวส่วน A ไม่มีรหัสผ่าน token หรือข้อมูลติดต่อของผู้ให้ข้อมูล
+- ผลทดสอบมาจากการรันจริงเท่านั้น ข้อที่ยังไม่ได้รันเขียน Not Executed พร้อมเหตุผล ดู [EVIDENCE-RULES.md](EVIDENCE-RULES.md)
+- เอกสารต้นทางติดป้ายตามจริง: SE02 และ SRS **มีก่อนพัฒนา** · บทที่3 **สร้างย้อนหลัง**
+- การใช้ AI บันทึกไว้ทั้งหมดใน [AI-LOG.md](AI-LOG.md)
 
-ห้ามสร้าง test result, log, screenshot, approval, stakeholder decision หรือหลักฐานที่ทีมไม่ได้ดำเนินการจริง หากใช้ AI ต้องเปิดเผยและตรวจข้อเสนอเทียบกับ artifact ของทีมเสมอ
+| สถานะหลักฐาน | ใช้เมื่อ |
+|---|---|
+| `Existing` | หลักฐานมีอยู่จริงและเปิดตรวจได้ |
+| `Planned` | วางแผนจะสร้าง แต่ยังไม่เกิด |
+| `Not Ready` | ยังทำไม่ได้เพราะมี decision/input/blocker ขาด |
+| `Not Executed` | ออกแบบการทดสอบแล้วแต่ยังไม่ได้รัน |
 
-## 4. แผนหลักฐาน Week 01–04
-
-| Week | ใช้อะไรเป็น Input | ทำอะไร | ไฟล์ส่งมาตรฐาน | นำไปใช้ต่อ |
-|---|---|---|---|---|
-| 01 | Proposal, Requirement/SRS, stakeholder context | Quality Risk Cards 3–5 รายการ | `W01_<TeamName>_Quality-Risk-Cards_v1.pdf` | เลือก critical risk/feature ใน Week 02 |
-| 02 | W01 + สถานะ SDLC ของ ENGSE212 | Project Quality Route Map 1 critical slice | `W02_<TeamName>_Project-Quality-Route-Map_v1.pdf` | ตั้ง V&V questions/evidence/gates และเลือก requirement สำหรับ Week 03 |
-| 03 | SRS จริง + W01/W02 | ตรวจ testability, ปรับ 3–5 requirements, เขียน Acceptance Criteria | `W03_<TeamName>_Revised-Critical-Requirements_v1.pdf` | เป็น input ของ Review Log และ RTM Lite |
-| 04 | W03-OUT + SRS/version + risk/design notes | Requirement Review, RTM v1, Gate A | `W04_<TeamName>_SRS-Review-and-RTM_v1.pdf` | Phase 2 Entry Pack สำหรับ Component/Integration/System/UAT |
-
-รายละเอียด ขั้นตอน แบบกรอก และ Definition of Done อยู่ใน README ของแต่ละสัปดาห์
-
-> หมายเหตุเรื่อง path: เอกสารสอน Week 01–02 ระบุ `01-foundation/` และ `02-quality-route-map/` เป็นทางเลือกชั่วคราวสำหรับทีมที่ยังไม่มีโครงสร้าง เมื่อใช้ template นี้ให้ถือ `WEEKS/week-01/submission/` และ `WEEKS/week-02/submission/` เป็นตำแหน่งมาตรฐาน เพื่อไม่ให้เกิดไฟล์ซ้ำสองที่
-
-## 5. วิธีส่งงานรายสัปดาห์
-
-1. ทีมทำงานใน branch เช่น `week-03/requirement-review`
-2. กรอก template ใน `work/` และอัปเดต reference ไปยัง input จริง
-3. ให้สมาชิกที่ไม่ใช่ผู้เขียนหลักทำ peer review และบันทึกผล
-4. ตรวจ Definition of Done ใน README ของสัปดาห์
-5. Export ไฟล์ส่งเป็น PDF ด้วยชื่อมาตรฐาน แล้ววางใน `submission/`
-6. Commit ด้วยรูปแบบ `submit(W03): revised critical requirements v1`
-7. Merge เข้า `main` เมื่อทีมตรวจครบ
-8. สร้าง tag เช่น `w03-submission-v1`
-9. กรอก tag, commit hash และ URL ใน [STATUS.md](STATUS.md)
-10. ส่ง URL ของ repository พร้อม tag/commit hash ผ่านช่องทางที่อาจารย์กำหนด
-
-หากแก้หลังส่ง ให้เพิ่ม version และ tag เช่น `v2` ห้ามแทนที่ประวัติโดยไม่อธิบายเหตุผลใน `STATUS.md`
-
-## 6. โครงสร้างสำคัญ
+## โครงสร้าง
 
 ```text
 .
-├── PROJECT.md                 ข้อมูลและสถานะโครงงาน ENGSE212
-├── TEAM.md                    สมาชิก บทบาท และผู้รับผิดชอบ
-├── STATUS.md                  สถานะและหลักฐานการส่งรายสัปดาห์
-├── CONTRIBUTING.md            วิธีทำงานร่วมกันด้วย Git
-├── INPUTS/                    Proposal/SRS/design และทะเบียน input
-├── TEMPLATES/                 แบบบันทึกกลางที่ใช้ซ้ำได้
-└── WEEKS/
-    ├── week-01/ ... week-04/  คำสั่ง งานระหว่างทำ และจุดวางไฟล์ส่ง
-    └── week-05/ ... week-17/  README เตรียมล่วงหน้าตามแผนรายวิชา
+├── SUBMISSIONS.md        หน้าส่งงานหลัก (G1–G9)
+├── PROJECT.md · TEAM.md · AI-LOG.md · STATUS.md
+├── EVIDENCE-RULES.md · HOW-TO-GITHUB.md · UPDATE-2569-10.md · CONTRIBUTING.md
+├── INPUTS/               Proposal · SRS · บทที่3 และทะเบียน input
+├── WEEKS/week-01..05/    งานรายสัปดาห์ (work/ และ submission/)
+├── 01-plan/              ใบงานครั้งที่ 1 ส่วน B
+├── 02-test-design/       ใบงานครั้งที่ 2 ส่วน B
+├── 03-test-execution/    ใบงานรวม 3–4 ส่วน B1 (execution-report · tests · evidence)
+└── tools/                check_submission.py ตรวจความครบเบื้องต้น
 ```
 
-## 7. Source of truth
-
-- สถานะและ source of truth ของ Proposal/SRS/Design: `INPUTS/input-register.md`
-- สถานะการส่ง ENGSE601: `STATUS.md`
-- โค้ด/build จริงของ ENGSE212: ใส่ URL และ commit/build reference ใน `PROJECT.md`; ไม่จำเป็นต้องคัดลอก source code มาที่ repo นี้
-- หากข้อมูลไม่ตรงกัน ให้ยึด artifact version ที่ระบุใน input register และบันทึกการเปลี่ยนแปลงก่อนใช้งานต่อ
+ตรวจความครบก่อนส่ง: `python tools/check_submission.py .`
