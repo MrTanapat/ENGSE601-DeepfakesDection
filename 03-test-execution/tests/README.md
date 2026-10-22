@@ -1,4 +1,4 @@
-# โค้ดทดสอบ · DeepfakesDection_Team
+# โค้ดทดสอบ · DeepfakesDection
 
 ไฟล์ในโฟลเดอร์นี้เขียนขึ้นสำหรับ Frontend ของโครงงาน ENGSE212 ([`MrTanapat/Deepfakes-Detections-Xceptionnet`](https://github.com/MrTanapat/Deepfakes-Detections-Xceptionnet) commit `441d891`) โดยคงโครงโฟลเดอร์ `frontend/` เดิม เพราะโค้ดทดสอบ import ไฟล์ของแอปผ่าน alias `@/` → `frontend/src`
 

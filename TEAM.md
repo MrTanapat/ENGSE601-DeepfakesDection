@@ -1,10 +1,10 @@
-# ทีมและหน้าที่ · DeepfakesDection_Team
+# ทีมและหน้าที่ · DeepfakesDection
 
 > repo นี้เป็น Public · **ห้ามใส่รหัสนักศึกษา** ใช้ชื่อและ GitHub username · ผู้สอนจับคู่กับรหัสเอง
 
 | รายการ | กรอก |
 |---|---|
-| ชื่อทีม (`<TeamName>`) | DeepfakesDection_Team |
+| ชื่อทีม (`<TeamName>`) | DeepfakesDection |
 | ผู้ส่งหลัก | ธนภัทร นุกูล |
 
 ## สมาชิก

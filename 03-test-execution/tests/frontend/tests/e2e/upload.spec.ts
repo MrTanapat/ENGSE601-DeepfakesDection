@@ -1,5 +1,5 @@
 // System test ผ่านหน้าจอจริง /detect แบบ Guest (ไม่เข้าสู่ระบบ)
-// ชุดอ้างอิง: 02-test-design/S2-B_DeepfakesDection_Team.md รุ่น v1
+// ชุดอ้างอิง: 02-test-design/S2-B_DeepfakesDection.md รุ่น v1
 import { test, expect } from "@playwright/test";
 import path from "node:path";
 

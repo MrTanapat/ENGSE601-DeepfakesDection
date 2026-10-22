@@ -1,10 +1,10 @@
-# ผลการรันจริง (B1) · DeepfakesDection_Team
+# ผลการรันจริง (B1) · DeepfakesDection
 
 | รายการ | ข้อมูล |
 |---|---|
-| ทีม · feature | DeepfakesDection_Team · อัปโหลดไฟล์และตรวจไฟล์ก่อนประมวลผล (UC-02 · UC-03) |
+| ทีม · feature | DeepfakesDection · อัปโหลดไฟล์และตรวจไฟล์ก่อนประมวลผล (UC-02 · UC-03) |
 | รุ่นของระบบที่รัน | repo ENGSE212 [`MrTanapat/Deepfakes-Detections-Xceptionnet`](https://github.com/MrTanapat/Deepfakes-Detections-Xceptionnet) commit `441d891` (26 พ.ค. 2569) · Frontend Next.js 16.2.1 · **Backend ยังไม่มีโค้ด** (`backend/main.py` ว่าง) |
-| ชุดอ้างอิงที่ใช้ | รุ่น v1 · [02-test-design/S2-B_DeepfakesDection_Team.md](../02-test-design/S2-B_DeepfakesDection_Team.md) · ไม่ได้แก้ |
+| ชุดอ้างอิงที่ใช้ | รุ่น v1 · [02-test-design/S2-B_DeepfakesDection.md](../02-test-design/S2-B_DeepfakesDection.md) · ไม่ได้แก้ |
 | เครื่องมือ | Node.js 22.22.0 · Vitest 3.2.4 · jsdom 26.1.0 · @testing-library/react 16.3.0 · @playwright/test 1.56.1 กับ Chromium 141 (headless) |
 | สภาพแวดล้อม | เครื่อง Linux x86_64 · Unit รันใน jsdom · System เปิด `next dev` ที่ `localhost:3000` แบบ Guest (ไม่เข้าสู่ระบบ) · ไฟล์ทดสอบสร้างด้วย [`make-test-data.sh`](tests/frontend/tests/e2e/make-test-data.sh) ไม่มีใบหน้าคนจริง · เครื่องทดสอบออกอินเทอร์เน็ตไม่ได้ ฟอนต์ Google Fonts จึงใช้ฟอนต์สำรอง |
 | วันที่รัน · ผู้รัน | 22 ต.ค. 2569 เวลา 11:15 น. · รันโดย Claude (AI) ตามคำขอของ ธนภัทร นุกูล บนเครื่องทดสอบของ Claude (ดู [AI-LOG.md](../AI-LOG.md)) · ผลไม่ได้ถูกแก้ |

@@ -1,6 +1,6 @@
-# ใบงานครั้งที่ 1 ส่วน B · วางแผนก่อนทดสอบ (Evidence Pack ส่วนที่ 1) · DeepfakesDection_Team
+# ใบงานครั้งที่ 1 ส่วน B · วางแผนก่อนทดสอบ (Evidence Pack ส่วนที่ 1) · DeepfakesDection
 
-ไฟล์: [S1-B_DeepfakesDection_Team.pdf](S1-B_DeepfakesDection_Team.pdf) (ไฟล์ส่ง · เฉพาะส่วน B) · [S1-B_DeepfakesDection_Team.md](S1-B_DeepfakesDection_Team.md) (ฉบับอ่านบนเว็บ) · [S1-B_DeepfakesDection_Team_components.svg](S1-B_DeepfakesDection_Team_components.svg) (ภาพส่วนประกอบ ป้าย **สร้างย้อนหลัง**)
+ไฟล์: [S1-B_DeepfakesDection.pdf](S1-B_DeepfakesDection.pdf) (ไฟล์ส่ง · เฉพาะส่วน B) · [S1-B_DeepfakesDection.md](S1-B_DeepfakesDection.md) (ฉบับอ่านบนเว็บ) · [S1-B_DeepfakesDection_components.svg](S1-B_DeepfakesDection_components.svg) (ภาพส่วนประกอบ ป้าย **สร้างย้อนหลัง**)
 
 ไปอยู่ในเล่มหัวข้อ 3.3–3.4 · 3.5.1 · 3.5.2
 

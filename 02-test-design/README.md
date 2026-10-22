@@ -1,6 +1,6 @@
-# ใบงานครั้งที่ 2 ส่วน B · ออกแบบกรณีทดสอบ (Evidence Pack ส่วนที่ 2) · DeepfakesDection_Team
+# ใบงานครั้งที่ 2 ส่วน B · ออกแบบกรณีทดสอบ (Evidence Pack ส่วนที่ 2) · DeepfakesDection
 
-ไฟล์: [S2-B_DeepfakesDection_Team.pdf](S2-B_DeepfakesDection_Team.pdf) (ไฟล์ส่ง) · [S2-B_DeepfakesDection_Team.md](S2-B_DeepfakesDection_Team.md) (ฉบับอ่านบนเว็บ)
+ไฟล์: [S2-B_DeepfakesDection.pdf](S2-B_DeepfakesDection.pdf) (ไฟล์ส่ง) · [S2-B_DeepfakesDection.md](S2-B_DeepfakesDection.md) (ฉบับอ่านบนเว็บ)
 
 ไปอยู่ในเล่มหัวข้อ 3.5.3 · 3.5.4 · ภาคผนวก ง
 

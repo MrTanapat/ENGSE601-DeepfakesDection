@@ -1,4 +1,4 @@
-# ใบงานรวม 3–4 ส่วน B1 · รันชุดอ้างอิงของทีม (Evidence Pack ส่วนที่ 3) · DeepfakesDection_Team
+# ใบงานรวม 3–4 ส่วน B1 · รันชุดอ้างอิงของทีม (Evidence Pack ส่วนที่ 3) · DeepfakesDection
 
 กรอก [execution-report.md](execution-report.md) แทนการส่ง PDF · ผล: 14 กรณี Pass 9 · Fail 4 (TC-03 · TC-09 · TC-10 · SYS-02) · Not Executed 1 (TC-12 รอ Backend) · UAT Not Executed พร้อมแผน
 

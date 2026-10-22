@@ -2,7 +2,7 @@
 
 ## Context
 
-- Project/team: เว็บแอปตรวจจับ Deepfake (DeepfakesDection_Team)
+- Project/team: เว็บแอปตรวจจับ Deepfake (DeepfakesDection)
 - Current SDLC status: Implement — Model/Backend (XceptionNet) เทรน+ทดสอบเบื้องต้นเสร็จแล้ว, Frontend ยังอยู่ HLD/Design (Mockup เท่านั้น)
 - Milestone/sprint/date: ตาม Gantt Chart (SE02 §12.3) กำลังเข้าเดือน 4–5 (Testing) ณ 22 ส.ค. 69
 - Critical requirement/feature/risk: NFR-02 (ความแม่นยำของโมเดล) + QR-01 (Model generalization risk จาก W01)

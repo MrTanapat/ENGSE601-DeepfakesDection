@@ -1,8 +1,8 @@
-# ใบงานครั้งที่ 1 ส่วน B · วางแผนก่อนทดสอบ · DeepfakesDection_Team
+# ใบงานครั้งที่ 1 ส่วน B · วางแผนก่อนทดสอบ · DeepfakesDection
 
 | รายการ | ข้อมูล |
 |---|---|
-| ชื่อทีม | DeepfakesDection_Team (สมาชิก 1 คน) |
+| ชื่อทีม | DeepfakesDection (สมาชิก 1 คน) |
 | ชื่อโครงงาน | เว็บแอปพลิเคชันตรวจจับ Deepfake อัจฉริยะเพื่อความมั่นคงปลอดภัยสารสนเทศ (กรณีศึกษา สำนักข่าว Lanner News) |
 | เอกสารที่ใช้ | SRS `Software_Requirements_Specification.pdf` (IN-02) · Proposal SE02 Final 2 มี.ค. 2569 (IN-01) · บทที่3 การออกแบบ 20 ส.ค. 2569 (IN-03) |
 | โค้ดที่อ้างถึง | repo ENGSE212 `MrTanapat/Deepfakes-Detections-Xceptionnet` commit `441d891` (26 พ.ค. 2569) |
@@ -19,7 +19,7 @@
 
 ## ขั้นที่ 2 ส่วนประกอบที่ feature นี้ผ่าน
 
-![ภาพส่วนประกอบของ feature อัปโหลดและตรวจไฟล์](S1-B_DeepfakesDection_Team_components.svg)
+![ภาพส่วนประกอบของ feature อัปโหลดและตรวจไฟล์](S1-B_DeepfakesDection_components.svg)
 
 **ที่มาของภาพ: สร้างย้อนหลัง** วาดจากบทที่3 §3.2.5 (3-Tier), ตารางที่ 3.20–3.23 และ §3.7.1–3.7.2 · บทที่3 เขียนเมื่อ 20 ส.ค. 2569 หลังเริ่มโค้ด Frontend · รหัส FE-x / BE-x ทีมตั้งตามลำดับในตารางที่ 3.20 และ 3.21
 

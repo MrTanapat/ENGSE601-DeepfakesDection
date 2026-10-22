@@ -1,5 +1,5 @@
 // Unit test ของ Upload Module (บทที่3 ตารางที่ 3.20 ข้อ 2) — ฟังก์ชัน handleFile ใน DetectPage
-// ชุดอ้างอิง: 02-test-design/S2-B_DeepfakesDection_Team.md รุ่น v1
+// ชุดอ้างอิง: 02-test-design/S2-B_DeepfakesDection.md รุ่น v1
 // ผลที่คาดหวังมาจากความต้องการ ไม่ได้ดูจากโค้ด:
 //   REQ-01 ไฟล์ต้องไม่เกิน 100 MB (บทที่3 §3.7.1, §3.11.2 · SE02 NFR-01) · 1 MB = 1,048,576 ไบต์ (สมมติฐาน DQ-01)
 //   REQ-02 รับเฉพาะ JPG, PNG, MP4, MOV, AVI (SRS ข้อจำกัดด้านเทคโนโลยี ข้อ 1)

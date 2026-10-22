@@ -1,8 +1,8 @@
-# W05 — HLD Review และ Requirement-to-Design Trace · DeepfakesDection_Team
+# W05 — HLD Review และ Requirement-to-Design Trace · DeepfakesDection
 
 | รายการ | ข้อมูล |
 |---|---|
-| ทีม | DeepfakesDection_Team (สมาชิก 1 คน: ธนภัทร นุกูล · GitHub `MrTanapat`) |
+| ทีม | DeepfakesDection (สมาชิก 1 คน: ธนภัทร นุกูล · GitHub `MrTanapat`) |
 | วันที่ทบทวน | 22 ต.ค. 2569 · ฉบับ v1 |
 | คำถามหลัก | ความต้องการข้อนี้ มีส่วนประกอบใดรับผิดชอบ และถ้าพฤติกรรมผิด จะเห็นได้ที่จุดใด |
 | กรณีศึกษาที่ใช้ | **เอกสารออกแบบของโครงงานทีม (บทที่3)** แทน Case X · ทีมไม่มีไฟล์ CaseX SRS v1.0 และ HLD v0.9 จึงทบทวนเอกสารจริงของโครงงานตามแนวทางเดียวกัน |

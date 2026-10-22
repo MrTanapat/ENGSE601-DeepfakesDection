@@ -2,7 +2,7 @@
 
 ## Review scope
 
-- Project/team: เว็บแอปตรวจจับ Deepfake (DeepfakesDection_Team)
+- Project/team: เว็บแอปตรวจจับ Deepfake (DeepfakesDection)
 - SRS/Requirement artifact + version/commit: SE02Finalversion.docx (IN-01) §10.3–10.4, SE02 Final 2 มี.ค. 2569 — commit: [กรอกตอน commit จริง]
 - Critical slice / linked W01 risk / W02 route: QR-01 — Model generalization risk (W01) / Route Map Gate A–D (W02)
 - Authors: ธนภัทร นุกูล

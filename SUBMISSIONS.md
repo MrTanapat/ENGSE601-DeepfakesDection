@@ -16,7 +16,7 @@
 
 | รายการ | กรอก |
 |---|---|
-| ชื่อทีม (`<TeamName>` ภาษาอังกฤษ ไม่มีช่องว่าง ใช้ชื่อเดียวกันทุกไฟล์) | DeepfakesDection_Team |
+| ชื่อทีม (`<TeamName>` ภาษาอังกฤษ ไม่มีช่องว่าง ใช้ชื่อเดียวกันทุกไฟล์) | DeepfakesDection |
 | โครงงาน ENGSE212 | เว็บแอปพลิเคชันตรวจจับ Deepfake อัจฉริยะเพื่อความมั่นคงปลอดภัยสารสนเทศ (กรณีศึกษา Lanner News) · repo [MrTanapat/Deepfakes-Detections-Xceptionnet](https://github.com/MrTanapat/Deepfakes-Detections-Xceptionnet) |
 | feature ที่ใช้ทดสอบ (เลือกในใบงานครั้งที่ 1) | อัปโหลดไฟล์และตรวจไฟล์ก่อนประมวลผล (UC-02 · UC-03) |
 | ผู้ส่งหลัก | ธนภัทร นุกูล (ทีม 1 คน) |
@@ -26,13 +26,13 @@
 
 | # | งาน | ไฟล์และตำแหน่ง | นับเข้า | สถานะ | หมายเหตุ |
 |---|---|---|---|---|---|
-| G1 | W01 Quality Risk Cards | [W01_DeepfakesDection_Team_Quality-Risk-Cards_v1.pdf](WEEKS/week-01/submission/W01_DeepfakesDection_Team_Quality-Risk-Cards_v1.pdf) | จิตพิสัย | ส่งแล้ว | 5 cards · ไฟล์ทำงานใน [work/](WEEKS/week-01/work/) |
-| G2 | W02 Project Quality Route Map | [W02_DeepfakesDection_Team_Project-Quality-Route-Map_v1.pdf](WEEKS/week-02/submission/W02_DeepfakesDection_Team_Project-Quality-Route-Map_v1.pdf) | จิตพิสัย | ส่งแล้ว | critical slice QR-01 |
-| G3 | W03 Revised Critical Requirements | [W03_DeepfakesDection_Team_Revised-Critical-Requirements_v1.pdf](WEEKS/week-03/submission/W03_DeepfakesDection_Team_Revised-Critical-Requirements_v1.pdf) | Gate A | แก้หลังส่ง | เปลี่ยนชื่อไฟล์ให้ตรงรูปแบบ (เดิม `..._Critical-Requirement-Review_v1.pdf`) เนื้อหาเดิม · มีไฟล์ประกอบ Peer-Review-AI-Record |
-| G4 | W04 SRS Review, RTM Lite และ Gate A | [W04_DeepfakesDection_Team_SRS-Review-and-RTM_v1.pdf](WEEKS/week-04/submission/W04_DeepfakesDection_Team_SRS-Review-and-RTM_v1.pdf) · ไฟล์ทำงานใน [work/](WEEKS/week-04/work/) | Gate A | ส่งแล้ว | Gate A = Conditional |
-| G5 | W05 Requirement-to-Design Trace | [W05_DeepfakesDection_Team_Requirement-to-Design-Trace_v1.pdf](WEEKS/week-05/submission/W05_DeepfakesDection_Team_Requirement-to-Design-Trace_v1.pdf) · ไฟล์ทำงานใน [work/](WEEKS/week-05/work/) | Gate B | ส่งแล้ว | ใช้เอกสารออกแบบของโครงงาน (บทที่3) แทน Case X เพราะทีมไม่มีไฟล์ CaseX SRS v1.0 / HLD v0.9 |
-| G6 | ใบงานครั้งที่ 1 ส่วน B วางแผนก่อนทดสอบ | [01-plan/S1-B_DeepfakesDection_Team.pdf](01-plan/S1-B_DeepfakesDection_Team.pdf) **เฉพาะส่วน B** | Evidence Pack | ส่งแล้ว | มีฉบับ markdown คู่กัน |
-| G7 | ใบงานครั้งที่ 2 ส่วน B ออกแบบกรณีทดสอบ | [02-test-design/S2-B_DeepfakesDection_Team.pdf](02-test-design/S2-B_DeepfakesDection_Team.pdf) | Evidence Pack | ส่งแล้ว | ชุดอ้างอิงรุ่น v1 · 14 กรณี |
+| G1 | W01 Quality Risk Cards | [W01_DeepfakesDection_Quality-Risk-Cards_v1.pdf](WEEKS/week-01/submission/W01_DeepfakesDection_Quality-Risk-Cards_v1.pdf) | จิตพิสัย | ส่งแล้ว | 5 cards · ไฟล์ทำงานใน [work/](WEEKS/week-01/work/) |
+| G2 | W02 Project Quality Route Map | [W02_DeepfakesDection_Project-Quality-Route-Map_v1.pdf](WEEKS/week-02/submission/W02_DeepfakesDection_Project-Quality-Route-Map_v1.pdf) | จิตพิสัย | ส่งแล้ว | critical slice QR-01 |
+| G3 | W03 Revised Critical Requirements | [W03_DeepfakesDection_Revised-Critical-Requirements_v1.pdf](WEEKS/week-03/submission/W03_DeepfakesDection_Revised-Critical-Requirements_v1.pdf) | Gate A | แก้หลังส่ง | เปลี่ยนชื่อไฟล์ให้ตรงรูปแบบ (เดิม `..._Critical-Requirement-Review_v1.pdf`) เนื้อหาเดิม · มีไฟล์ประกอบ Peer-Review-AI-Record |
+| G4 | W04 SRS Review, RTM Lite และ Gate A | [W04_DeepfakesDection_SRS-Review-and-RTM_v1.pdf](WEEKS/week-04/submission/W04_DeepfakesDection_SRS-Review-and-RTM_v1.pdf) · ไฟล์ทำงานใน [work/](WEEKS/week-04/work/) | Gate A | ส่งแล้ว | Gate A = Conditional |
+| G5 | W05 Requirement-to-Design Trace | [W05_DeepfakesDection_Requirement-to-Design-Trace_v1.pdf](WEEKS/week-05/submission/W05_DeepfakesDection_Requirement-to-Design-Trace_v1.pdf) · ไฟล์ทำงานใน [work/](WEEKS/week-05/work/) | Gate B | ส่งแล้ว | ใช้เอกสารออกแบบของโครงงาน (บทที่3) แทน Case X เพราะทีมไม่มีไฟล์ CaseX SRS v1.0 / HLD v0.9 |
+| G6 | ใบงานครั้งที่ 1 ส่วน B วางแผนก่อนทดสอบ | [01-plan/S1-B_DeepfakesDection.pdf](01-plan/S1-B_DeepfakesDection.pdf) **เฉพาะส่วน B** | Evidence Pack | ส่งแล้ว | มีฉบับ markdown คู่กัน |
+| G7 | ใบงานครั้งที่ 2 ส่วน B ออกแบบกรณีทดสอบ | [02-test-design/S2-B_DeepfakesDection.pdf](02-test-design/S2-B_DeepfakesDection.pdf) | Evidence Pack | ส่งแล้ว | ชุดอ้างอิงรุ่น v1 · 14 กรณี |
 | G8 | ใบงานรวม 3–4 ส่วน B1 รันชุดอ้างอิงของทีม | [execution-report.md](03-test-execution/execution-report.md) · [tests/](03-test-execution/tests/) · [evidence/](03-test-execution/evidence/) | Evidence Pack | ส่งแล้ว | Pass 9 · Fail 4 · Not Executed 1 (TC-12 รอ Backend) · UAT Not Executed พร้อมแผน |
 | G9 | ใบงานรวม 3–4 ส่วน B3 หน้าที่และการใช้ AI | [TEAM.md](TEAM.md) · [AI-LOG.md](AI-LOG.md) | Evidence Pack | ส่งแล้ว | ทีม 1 คน |
 

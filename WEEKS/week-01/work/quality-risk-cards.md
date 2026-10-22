@@ -2,7 +2,7 @@
 
 ## Submission context
 
-- Project/team: เว็บแอปพลิเคชันตรวจจับ Deepfake อัจฉริยะฯ — `DeepfakesDection_Team`
+- Project/team: เว็บแอปพลิเคชันตรวจจับ Deepfake อัจฉริยะฯ — `DeepfakesDection`
 - Proposal/SRS source + version:
   - IN-01 Proposal — `INPUTS/proposal/SE02-Deepfakes-detection-Document-Edit_thanit_signed.pdf` (SE02 Final, 2 มี.ค. 2569) §6, §10.3–10.6, §12.3
   - IN-02 SRS — `INPUTS/requirements-srs/Software_Requirements_Specification.pdf` (FR-001–FR-010, NFR-001–NFR-005, ข้อจำกัด, สมมติฐาน)
@@ -11,7 +11,7 @@
 - Authors: ธนภัทร นุกูล (Primary Author)
 - Peer reviewer: อาจารย์นริศ กำแพงแก้ว / เพื่อนต่างทีม — **รอทบทวน (Not Executed)**; รอบนี้มีเฉพาะ self-check ของผู้เขียน
 - Review date/commit: 22 ต.ค. 2569 / [กรอก commit hash หลัง commit]
-- Submission file: `WEEKS/week-01/submission/W01_DeepfakesDection_Team_Quality-Risk-Cards_v1.pdf` — ดู Revision note ท้ายไฟล์
+- Submission file: `WEEKS/week-01/submission/W01_DeepfakesDection_Quality-Risk-Cards_v1.pdf` — ดู Revision note ท้ายไฟล์
 
 > ระดับความสำคัญ (Priority) = Impact × Likelihood ประเมินโดยผู้เขียน (H/M/L) · สถานะหลักฐานใช้ `Existing` / `Planned` / `Not Ready` / `Not Executed` ตาม README
 

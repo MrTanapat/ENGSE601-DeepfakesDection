@@ -2,7 +2,7 @@
 
 | Field                                     | Team record                                                                                                                                     |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Project/team                              | เว็บแอปตรวจจับ Deepfake (DeepfakesDection_Team)                                                                                                 |
+| Project/team                              | เว็บแอปตรวจจับ Deepfake (DeepfakesDection)                                                                                                 |
 | SRS/Requirement source + version/commit   | SE02Finalversion.docx (IN-01) §10.3–10.4, SE02 Final 2 มี.ค. 2569                                                                               |
 | Review date/session                       | 23 ส.ค. 69 (self-review session)                                                                                                                |
 | Critical slice / requirement IDs (3–5)    | QR-01 (Model generalization risk) / NFR-02, FR-05, FR-06, FR-07, NFR-09                                                                         |
